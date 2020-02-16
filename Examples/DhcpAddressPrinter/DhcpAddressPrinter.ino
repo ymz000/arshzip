@@ -53,7 +53,9 @@ void loop() {
       if (ui8Cnt10s > 9) {
         ui8Cnt10s = 0;
         
-        SpiR4((ui8HHG << 2) | bvRCR, 0);
+        SpiR4((ui8HHG << 2) | bvRCR, 0); // HHG register is 12 bytes.
+                                         // Reading only 4 bytes of it makes the SPI to lose synchronisation.
+                                         // To address this, read GC register and discard the result
         for (uint8_t ui8For = 0; ui8For < 15; ui8For++) {
           while(!(UCSR0A & (1 << 5))) {}
           UDR0 = pgm_read_byte(&strText[ui8For]);
@@ -93,6 +95,9 @@ void loop() {
         UDR0 = 13;
         while(!(UCSR0A & (1 << 5))) {}
         UDR0 = 10;
+
+        // read GC register and discard the result
+        SpiR2((ui8GC << 2) | bvRCR, 0); // this restores the SPI synchronization
       }
     }
   }
