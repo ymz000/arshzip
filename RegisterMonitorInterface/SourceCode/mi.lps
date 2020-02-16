@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="mi.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="136"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mipas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="955"/>
+        <CursorPos X="45" Y="975"/>
+        <UsageCount Value="136"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9598"/>
+        <CursorPos Y="9617"/>
+        <UsageCount Value="5"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="14" HistoryIndex="13">
+      <Position1>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="119" Column="43" TopLine="96"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="974" Column="42" TopLine="961"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mipas.pas"/>
+        <Caret Column="71"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="147" Column="199" TopLine="119"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="6" Column="31"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="23" Column="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="28" Column="27"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="973" Column="23" TopLine="939"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="974" Column="23" TopLine="940"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="981" Column="32" TopLine="946"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="988" Column="23" TopLine="953"/>
+      </Position11>
+      <Position12>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="989" Column="35" TopLine="954"/>
+      </Position12>
+      <Position13>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="23" Column="17" TopLine="2"/>
+      </Position13>
+      <Position14>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="974" Column="44" TopLine="940"/>
+      </Position14>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

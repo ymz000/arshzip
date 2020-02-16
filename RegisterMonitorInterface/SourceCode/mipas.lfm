@@ -1,0 +1,118 @@
+object frmMain: TfrmMain
+  Left = 74
+  Height = 440
+  Top = 107
+  Width = 1615
+  Caption = 'Elsofgel SEI Register Monitor Inteface'
+  ClientHeight = 440
+  ClientWidth = 1615
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object sgCr: TStringGrid
+    Left = 0
+    Height = 62
+    Top = 16
+    Width = 1720
+    AutoEdit = False
+    ColCount = 0
+    FixedCols = 0
+    FixedRows = 0
+    Flat = True
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goColMoving, goDblClickAutoSize, goSmoothScroll]
+    RowCount = 0
+    TabOrder = 0
+  end
+  object lblcCrNothing: TLabel
+    Left = 272
+    Height = 13
+    Top = 0
+    Width = 76
+    Caption = 'CrNothingError:'
+    ParentColor = False
+    Visible = False
+  end
+  object lblvCrNothing: TLabel
+    Left = 360
+    Height = 13
+    Top = 0
+    Width = 48
+    AutoSize = False
+    Caption = '0'
+    ParentColor = False
+    Visible = False
+  end
+  object lblvRng1: TLabel
+    Left = 483
+    Height = 13
+    Top = 0
+    Width = 41
+    Caption = 'lblvRng1'
+    ParentColor = False
+    Visible = False
+  end
+  object lblvRng0: TLabel
+    Left = 424
+    Height = 13
+    Top = 0
+    Width = 41
+    Caption = 'lblvRng0'
+    ParentColor = False
+    Visible = False
+  end
+  object sgSr: TStringGrid
+    Left = 0
+    Height = 348
+    Top = 88
+    Width = 1720
+    AutoEdit = False
+    ColCount = 0
+    FixedCols = 0
+    FixedRows = 0
+    Flat = True
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goColMoving, goDblClickAutoSize, goSmoothScroll]
+    RowCount = 0
+    TabOrder = 1
+  end
+  object lblvBytesReceivedPerSecond: TLabel
+    Left = 32
+    Height = 13
+    Top = 0
+    Width = 40
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0'
+    ParentColor = False
+  end
+  object lblcBytesReceivedPerSecond: TLabel
+    Left = 8
+    Height = 13
+    Top = 0
+    Width = 17
+    Caption = 'Rx:'
+    ParentColor = False
+  end
+  object lblcBps: TLabel
+    Left = 80
+    Height = 13
+    Top = 0
+    Width = 17
+    Caption = 'bps'
+    ParentColor = False
+  end
+  object rs232ComPort: TSdpoSerial
+    Active = False
+    BaudRate = br115200
+    AltBaudRate = 115200
+    DataBits = db8bits
+    Parity = pNone
+    FlowControl = fcNone
+    StopBits = sbOne
+    Device = 'COM11'
+    OnRxData = rs232ComPortRxData
+    left = 8
+  end
+  object tc500ms: TTimer
+    OnTimer = tc500msTimer
+    left = 48
+  end
+end
